@@ -135,7 +135,7 @@ const Contact = () => {
               <div className="text-white tracking-wider font-SFproLight md:text-xl my-4 ">
                 Socials
               </div>
-              <div className=" flex w-1/2 mx-auto gap-10 sm:gap-24 md:gap-32 lg:gap-8 ">
+              <div className=" flex w-1/2 mx-auto gap-10 sm:gap-24 md:gap-32 lg:gap-8 lg:relative lg:right-20 ">
                 <img
                   src={require("../assets/f.png")}
                   className="w-5 h-4 lg:w-6 object-cover"

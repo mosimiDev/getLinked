@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
   return (
     <div id="home">
-      <h1 className="text-xl text-white font-SFproBold tracking-wide py-3  sm:text-yellow md:text-white lg:text-yellow xl:text-white">
+      <h1 className="text-xl lg:text-3xl text-white font-SFproBold tracking-wide py-3  sm:text-yellow md:text-white lg:text-yellow xl:text-white">
         Earn for who you are
       </h1>
       <p className="text-white py-3 w-5/6 mx-auto tracking-wider font-SFproLight lg:text-xl">

@@ -145,14 +145,14 @@ const Roadmap = () => {
         Turpis ut consectetur mauris enim quam venenatis sed. Ornare at ultrices
         quis convallis risus malesuada quisque.
       </p>
-      <div className=" lg:flex lg:gap-20">
+      <div className=" lg:flex lg:gap-4">
         <div className="hidden lg:block lg:w-2/6 ">
           <img
             src={require("../assets/MascotIII.png")}
-            className="hidden lg:block lg:mr-8"
+            className="hidden lg:block lg:mr-8 lg:h-80"
           />
         </div>
-        <div className="bg-darkPurple rounded mx-4 md:w-1/2 lg:w-3/6 rounded-xl ">
+        <div className="bg-darkPurple rounded mx-4 md:w-1/2 lg:w-3/6 lg:h-72 rounded-xl ">
           <div className="flex w-5/6 mx-auto space-x-8 lg:space-x-32 md:mx-auto sm:space-x-80 p-3">
             <p className="text-white ">Lorem ipsum</p>
             <p className="text-white ">00000000000</p>
@@ -182,7 +182,7 @@ const Roadmap = () => {
             <p className="text-white ">Lorem ipsum</p>
             <p className="text-white">00000000000</p>
           </div>
-          <hr />
+
         </div>
       </div>
     </div>
