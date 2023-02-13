@@ -3,23 +3,23 @@ import React from "react";
 const Whiteboard = () => {
   return (
     <div id="whiteboard">
-      <h1 className="text-3xl text-white font-bold tracking-wide my-10 md:mt-20">
-        Africa is awakening online
+      <h1 className="text-xl lg:text-2xl text-white font-SFproBold tracking-wide my-4 lg:my-10 md:mt-20">
+        Lorem ipsum dolor sit amet
       </h1>
-      <p className="text-white mt-5 w-5/6 mx-auto tracking-wider font-medium md:text-xl">
+      <p className="text-white lg:mt-5 w-2/3 mx-auto tracking-wider font-SFproLight ">
         Turpis ut consectetur mauris enim quam venenatis sed. Ornare at ultrices
         quis convallis risus malesuada quisque.
       </p>
       {/* Encompassing div */}
-      <div>
+      <div className="lg:flex lg:gap-8">
         {/* Layout x text div */}
         <div>
           {/* Text div */}
-          <div className={"relative top-96 lg:w-96 "}>
-            <h3 className="text-white text-2xl py-3 tracking-wider font-medium lg:mb-8 lg:font-bold ">
+          <div className={"relative top-80  lg:w-96 lg:left-16"}>
+            <h3 className="text-white text-xl  tracking-wider font-SFproBold   ">
               Lorem ipsum dolor sit amet
             </h3>
-            <p className="text-white py-3 tracking-wider font-medium sm:w-5/6 sm:mx-auto md:text-xl ">
+            <p className="text-white py-3 tracking-wider font-SFproLight sm:w-5/6 sm:mx-auto ">
               Turpis ut consectetur mauris enim quam venenatis sed. Ornare at
               ultrices quis convallis risus malesuada quisque.
             </p>
@@ -30,46 +30,44 @@ const Whiteboard = () => {
             <img
               src={require("../assets/Caroussel.png")}
               className={
-                "hidden lg:block lg:relative lg:w-20 lg:bottom-2 lg:left-1/4"
+                "hidden lg:block lg:relative lg:w-20 lg:top-0 lg:left-72 "
               }
             />
             {/* Yoruba woman */}
             <img
               src={require("../assets/CarousselII.png")}
               className={
-                "hidden lg:block lg:relative lg:w-20 lg:bottom-2 lg:left-1/3"
+                "hidden lg:block lg:relative lg:w-20  lg:left-80 lg:ml-14"
               }
             />
             {/* Big woman */}
             <img
               src={require("../assets/CarousselIII.png")}
               className={
-                "relative w-32 left-28  bottom-18 object-cover sm:left-1/2 sm:w-40 lg:w-28 lg:bottom-1 lg:left-1/2"
+                "relative w-32 left-28  bottom-18 object-cover sm:w-40 lg:w-28 lg:ml-80 "
               }
             />
             {/* Hijab woman */}
             <img
               src={require("../assets/CarousselIV.png")}
               className={
-                "relative w-28 left-60 bottom-52 pt-20 object-cover sm:left-3/4 lg:w-20 lg:left-1/3 lg:bottom-1"
+                "relative w-28 left-60 bottom-52 pt-20 object-cover sm:left-3/4 lg:w-20 lg:ml-16  lg:mt-40 "
               }
             />
             {/* man with cap */}
             <img
               src={require("../assets/CarousselV.png")}
               className={
-                "relative w-28 bottom-80 object-cover sm:left-1/3 lg:w-20 lg:bottom-0 lg:left-1/4"
+                "relative w-28 bottom-80 object-cover sm:left-1/3 lg:w-20  lg:mt-32 lg:ml-48 "
               }
             />
           </div>
         </div>
         {/* Big Picture div */}
-        <div className=" lg:w-52  lg:relative lg:left-3/4  lg:bottom-96 ">
+        <div className="hidden lg:block  lg:w-96 lg:h-1/2  lg:relative lg:left-40 lg:top-28 ">
           <img
             src={require("../assets/BigImage.png")}
-            className={
-              "hidden lg:block lg:w-40 lg:center"
-            }
+            className={"hidden lg:block lg:w-96  "}
           />
         </div>
       </div>

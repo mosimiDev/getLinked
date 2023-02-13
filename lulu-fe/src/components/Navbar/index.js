@@ -13,11 +13,11 @@ const Navbar = () => {
       <nav className="flex justify-between h-22 p-5">
         <img
           src={require("../../../src/assets/Logo.png")}
-          className={" w-20 h-10  object-cover"}
+          className={" w-16 h-8  object-cover"}
         />
 
         <div
-          className="text-white text-xl pointer lg:hidden m-7"
+          className="text-white text-xl pointer lg:hidden "
           onClick={handleClick}
         >
           <i
@@ -29,41 +29,41 @@ const Navbar = () => {
           <Link
             to="#about"
             smooth
-            className=" text-white block w-12  mx-auto lg:inline my-8 "
+            className=" text-white lg:mx-10  block w-12  lg:inline my-8 "
           >
             About
           </Link>
-          <hr className="text-white w-12 lg:hidden mx-auto" />
+          <hr className="text-white w-12 lg:hidden " />
           <Link
             to="#contact"
             smooth
-            className="text-white lg:mx-6 block w-20  mx-auto lg:inline my-8"
+            className="text-white lg:mx-10 block w-24   lg:inline my-8"
           >
             Contact Us
           </Link>
-          <hr className="text-white w-12 lg:hidden mx-auto" />
+          <hr className="text-white w-12 lg:hidden " />
           <Link
             to="#roadmap"
             smooth
-            className="text-white lg:mx-6 block w-12  mx-auto lg:inline my-8"
+            className="text-white lg:mx-10 block w-12   lg:inline my-8"
           >
             Roadmap
           </Link>
-          <hr className="text-white w-12 lg:hidden mx-auto" />
+          <hr className="text-white w-12 lg:hidden " />
           <Link
             to="#whiteboard"
             smooth
-            className="text-white lg:mx-6 block w-12  mx-auto lg:inline my-8"
+            className="text-white lg:mx-10 block w-12   lg:inline my-8"
           >
             Whiteboard
           </Link>
-          <hr className="text-white w-12 lg:hidden mx-auto" />
+          <hr className="text-white w-12 lg:hidden " />
         </div>
-        <nav className="hidden lg:block  pt-1 border-2 h-10 border-yellow rounded-md  w-32 ">
+        <nav className="hidden lg:block pt-1  border-2 h-10 border-yellow rounded-md  w-32 ">
           <Link
             to="#playGame"
             smooth
-            className="mx-5 text-yellow border-yellow"
+            className="mx-5 pt-4 text-yellow border-yellow"
           >
             Play Game
           </Link>

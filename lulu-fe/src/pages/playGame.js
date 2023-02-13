@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const PlayGame = () => {
   return (
     <div id="playGame">
@@ -8,7 +9,7 @@ const PlayGame = () => {
       <div>
         <img src={require("../assets/Logo.png")} />
         <div>
-          <a href="#"><p>New Game</p></a>
+          <Link to="">New Game</Link>
           <a href="#"><p>Tutorial</p></a>
           <a href="#"><p>Tribe Reviews</p></a>
           <a href="#"><p>Leadership Board</p></a>

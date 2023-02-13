@@ -2,9 +2,10 @@
   text-align: center;
   background-image: url(/src/assets/Background.png);
   background-position: "cover";
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-repeat: repeat;
   background-color: #301934;
+  font-family: "SFproRegular", "sans-serif";
 }
 
 /* .App-logo {
