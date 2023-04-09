@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link
             to="#about"
             smooth
-            className=" text-white lg:mx-10  block w-12  lg:inline my-8 "
+            className=" text-white lg:mx-10 my-8  w-12 block  lg:inline  "
           >
             About
           </Link>
