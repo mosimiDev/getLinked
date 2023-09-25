@@ -1,0 +1,5 @@
+#home{
+ background-image: url(../assets/Purple-Lens-Flare-PNG.png);
+ background-repeat: no-repeat; 
+ mask: radical-gradient (#000 0 0)
+}

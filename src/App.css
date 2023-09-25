@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+  background-position: "cover";
+  background-color: #150E28;
+  /* background-image: url(../src/assets/Purple-Lens-Flare-PNG.png); */
+  font-family: "SFproRegular", "sans-serif";
+  /* mask-image: linear-gradient(to right, transparent 10%, #150E28); */
+}

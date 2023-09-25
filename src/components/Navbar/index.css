@@ -1,0 +1,33 @@
+#myList{
+  margin-left:auto;
+  margin-right: 20px;
+  margin-top: 6px;
+}
+#myList a.active{
+  color: #FE34B9;
+
+}
+
+@media screen and (max-width:1024px) {
+  #myList {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      top: 60px;
+      right:-95%;
+      width: 90%;
+      height: 100vh;
+      background: #150E28;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      padding: 40px 0 0 10px;
+      z-index: 2;
+  
+    }
+
+        #myList.active {
+          right: 0px;
+        }
+}
+
+
