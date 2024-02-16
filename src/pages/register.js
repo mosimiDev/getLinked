@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 // import { Link } from "react-router-dom";
 // import axios from "axios";
 
 const Register = () => {
-  // Get categories state
-  const [getCategories, setGetCategories] = useState([]);
+
 
   // Post data state
   const [newUserData, setNewUserData] = useState({
@@ -13,7 +12,7 @@ const Register = () => {
     team_name: "",
     group_size: 0,
     project_topic: "",
-    category: parseInt("0"),
+    category: "",
     privacy_poclicy_accepted: false,
   });
 
@@ -41,19 +40,8 @@ const Register = () => {
     setNewUserData({ ...newUserData, [e.target.id]: e.target.value });
   }
 
-  // Get Categories
 
-  useEffect(() => {
-    fetch("https://backend.getlinked.ai/hackathon/categories-list", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" },
-    })
-      .then((res) => res.json())
-      .then((response) => setGetCategories(response))
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
+  
 
   // Post New Users
   const storeNewUser = async () => {
@@ -64,14 +52,14 @@ const Register = () => {
         body: JSON.stringify(newUserData),
       }).then((res) => console.log(res));
       setError("");
-      setSuccess("=You Have Been Registered Sucessfully")
+      setSuccess("You Have Been Registered Sucessfully")
       setNewUserData({
         email: "",
         phone_number: "",
         team_name: "",
-        group_size: 0,
+        group_size: "",
         project_topic: "",
-        category: parseInt("0"),
+        category:"",
         privacy_poclicy_accepted: false,
       });
     }
@@ -114,7 +102,7 @@ const Register = () => {
           <h2 className="text-white mb-8 lg:text-start ">
             CREATE YOUR ACCOUNT
           </h2>
-          <p className="text-[#D434FE] text-xl">{success}</p>
+          <h2 className="text-[#D434FE] text-xl">{success}</h2>
           {/* Form section */}
           <form>
             {/* First category of input */}
@@ -210,9 +198,11 @@ const Register = () => {
                   }}
                   value={newUserData.category}
                 >
-                  {getCategories?.map((item) => (
-                    <option key={item.id}>{item.name}</option>
-                  ))}
+                  
+                    <option value={""} selected disabled>Select your category</option>
+                    <option value={"1"} >MOBILE</option>
+                    <option value={"2"} >WEB</option>
+                    <option value={"3"} >BACKEND</option>
                 </select>
               </div>
               {/* End of Category input div */}

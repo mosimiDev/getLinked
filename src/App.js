@@ -3,13 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route, Switch} from "react-router-dom";
 import Home from "./pages/home";
-import Overview from "./pages/overview";
-import Footer from "./pages/footer";
-import Contact from "./pages/contact";
-import Timeline from "./pages/timeline";
-import FAQ from "./pages/faq";
-import Register from "./pages/register";
-
+import Error404 from "./pages/Error404";
 function App() {
   
   return (
@@ -17,6 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={< Error404/>} />
       </Routes>
     </div>
   );
@@ -24,5 +19,3 @@ function App() {
 }
 
 export default App;
-{/* <Route path="/register" element={<Register />} />
-        <Route path="/contact" element={<Contact />} /> */}
